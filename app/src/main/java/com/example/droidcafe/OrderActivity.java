@@ -44,19 +44,19 @@ public class OrderActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.sameday:
+            case 1:
                 if (checked)
                     // Same day service
                     displayToast(getString(R.string.chosen) +
                             getString(R.string.same_day_messenger_service));
                 break;
-            case R.id.nextday:
+            case 2:
                 if (checked)
                     // Next day delivery
                     displayToast(getString(R.string.chosen) +
                             getString(R.string.next_day_ground_delivery));
                 break;
-            case R.id.pickup:
+            case 3:
                 if (checked)
                     // Pick up
                     displayToast(getString(R.string.chosen) +
